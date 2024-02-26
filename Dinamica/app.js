@@ -17,3 +17,9 @@ function generarColorHexAleatorio() {
   return color;
 }
 
+// Event Listener.
+boton.addEventListener('click', function() {
+    let colorAleatorio = generarColorHexAleatorio();
+    document.body.style.backgroundColor = colorAleatorio;
+    color.textContent = colorAleatorio;
+  });
